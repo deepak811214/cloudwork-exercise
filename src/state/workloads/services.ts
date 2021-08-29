@@ -14,7 +14,7 @@ export class WorkloadService {
   }
 
   private completeWorkload(work: Work) {
-    work.status = work.id % 2
+    work.status = work.status !== 'CANCELED' && work.id % 2
       ? 'FAILURE'
       : 'SUCCESS';
   }

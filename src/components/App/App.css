@@ -1,1 +1,84 @@
 /* .App {} */
+
+* {
+  box-sizing: border-box;
+  color: #5200f6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloudwork {
+  min-width: 60vw;
+  padding: 2vh 6vw;
+  margin-top: 10vh;
+  border: 1px solid #5200f6;
+  border-top: 18px solid;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.form {
+  border: 1px solid #5200f6;
+  padding: 18px;
+  height: 200px;
+  margin-top: 68px;
+  margin-left: 14px;
+}
+
+.list {
+  width: 60%;
+}
+
+.WorkloadItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 24vw;
+  height: 70px;
+  border: 1px solid #5200f6;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+h3 {
+  margin: 4px 0;
+}
+
+.WorkloadItem-statusText {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.WorkloadItem-secondaryButton {
+  margin-left: 8px;
+  background: #7e4ce3;
+  color: #fff;
+  padding: 4px 10px;
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid #5200f6;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button[type="submit"] {
+  background: #5200f6;
+  color: #fff;
+  padding: 4px 10px;
+  margin-top: 20px;
+}
